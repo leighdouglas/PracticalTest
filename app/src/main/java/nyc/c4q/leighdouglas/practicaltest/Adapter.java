@@ -34,7 +34,6 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         Records record = recordList.get(position);
-        //Log.d(TAG, "onBindViewholder was successful");
         holder.bind(record);
 
     }

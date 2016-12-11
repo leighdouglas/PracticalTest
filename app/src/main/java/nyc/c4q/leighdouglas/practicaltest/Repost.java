@@ -5,18 +5,14 @@ package nyc.c4q.leighdouglas.practicaltest;
  */
 
 public class Repost {
-    String profileBackground;
     User user;
-
-    public String getProfileBackground() {
-        return profileBackground;
-    }
-
-    public boolean checkForUser(){
-        return (user != null);
-    }
+    String profileBackground;
 
     public User getUser() {
         return user;
+    }
+
+    public String getProfileBackgroundColor() {
+        return profileBackground;
     }
 }
