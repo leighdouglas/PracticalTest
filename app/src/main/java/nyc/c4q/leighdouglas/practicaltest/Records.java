@@ -12,6 +12,10 @@ public class Records {
         return repost;
     }
 
+    public boolean checkRespost(){
+        return repost != null;
+    }
+
     public int getLiked() {
         return liked;
     }

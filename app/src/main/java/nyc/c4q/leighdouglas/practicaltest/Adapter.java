@@ -44,11 +44,7 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
         return recordList.size();
     }
 
-    public List<Records> getWpDataList() {
-        return recordList;
-    }
-
-    public void setWpDataList(List<Records> mRecordList) {
+    public void setRecordList(List<Records> mRecordList) {
         recordList.clear();
         recordList.addAll(mRecordList);
         notifyDataSetChanged();

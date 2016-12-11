@@ -2,6 +2,7 @@ package nyc.c4q.leighdouglas.practicaltest;
 
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -24,7 +25,9 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void bind(final Records record) {
-        //Log.d(TAG, "this worked");
-        //likes.setText(Integer.toString(record.getLiked()));
+        Log.d(TAG, "this worked");
+        if(record.checkRespost()){
+            username.setText(record.getRepost().getUser().getUsername());
+        }
     }
 }

@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
                     if (response.isSuccessful()) {
                         Log.d(TAG, "Success");
                         Log.d(TAG, Integer.toString(response.body().getData().getRecords().size()));
+                        adapter.setRecordList(response.body().getData().getRecords());
                     } else {
                         Log.d(TAG, "Error" + response.errorBody().string());
                     }
